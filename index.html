@@ -12,6 +12,7 @@
         <p>Last Name: <span class="lname"></span></p>
 
        <button class="showPhrase">Show Phrase</button>
+       <button class="delPhrase">Delete Interests</button>
         <p class="phrase"></p>
     <hr><p>Mod 2</p><hr>
 <form>
@@ -36,6 +37,11 @@
     document.querySelector('.phrase').innerHTML = 
     "Enjoys: <ul> <li>Web Development</li> <li>Electronics</li> <li>Automation</li> <li>Video Games</li> <li>Fish Keeping</li> <li>Gardening</li> </ul>"
     console.log("The show phrase button has been clicked.");
+}
+    
+    document.querySelector('.delPhrase').onclick = function() {
+    document.querySelector('.phrase').innerHTML = ""
+    console.log("The phrase has been deleted!");
 }
 </script>
 <script src="Sosborne_Mod2Assignment.js"></script>
