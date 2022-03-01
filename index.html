@@ -39,6 +39,22 @@
     <p class="dispArr"></p>
     </div>
     
+        <hr><p>Mod 3</p><hr>
+    <div style="border: 1px solid rgb(183, 206, 152); color: rgb(183, 206, 152); text-align: center; width: fit-content; margin: auto; padding: 15px 10px; transition: 1ms;">
+        <input type="text" id="cost" placeholder="Cost of services $" required>
+        <p>How would you rate the service?</p>
+        <input type="radio" id="great" name="rate" class="rate" value="3" checked>
+        <label for="great">Great</label>
+        <input type="radio" id="okay" name="rate" class="rate" value="2">
+        <label for="okay">Okay</label>
+        <input type="radio" id="poor" name="rate" class="rate" value="1">
+        <label for="poor">Poor</label><br><br>
+        <input type="button" class="send" onclick="sendForm();" value="Submit">
+        <p style="text-align: left;">Tip: $<span id="tip"></span></p>
+        <p style="text-align: left;">Total: $<span id="total"></span></p>
+    </div>
+
+
 </body>
 </html>
 <script>
@@ -56,5 +72,6 @@
     console.log("The phrase has been deleted!");
 }
 </script>
-<script src="Sosborne_Mod2Assignment.js"></script>
-<script src="Sosborne_Mod3Assignment.js"></script>
+<script src="Sosborne_Mod2Assignment.js" type="text/javascript"></script>
+<script src="Sosborne_Mod3Assignment.js" type="text/javascript"></script>
+<script src="Mod4Assignment.js" type="text/javascript"></script>
