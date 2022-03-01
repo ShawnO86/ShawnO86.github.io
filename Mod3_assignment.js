@@ -14,15 +14,21 @@ for (let i = 0; i < 11; i++){
 }
 
 function numLoop() {
-    const myNum = document.querySelector('.numB');
-    const numDisp = document.querySelector('.dispNumb')
+    let myNum = document.querySelector('.numB').value;
+    let numDisp = document.querySelector('.dispNumb');
     let myNumDisp = '';
     let i = 1;
+    if (parseInt(myNum) < 5 || parseInt(myNum) > 20) {
+        numDisp.innerHTML = "Please enter a number between 5 and 20";
+    } else if (!Number.isInteger(parseInt(myNum))) {
+        numDisp.innerHTML = "Please enter a <b>number</b> between 5 and 20.";
+    } else {
     do {
         myNumDisp += i + " ";
         i++;
-    } while (i <= myNum.value);
+    } while (i <= myNum);
     numDisp.innerHTML = myNumDisp;
+    }
 }
 
 let text = "";
