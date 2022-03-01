@@ -1,5 +1,4 @@
 
-
 function sendForm() {
     let servCost = document.querySelector('#cost').value;
     let servRate; 
@@ -15,7 +14,7 @@ function sendForm() {
         }
         let servTip = parseFloat(servCost) * parseFloat(servRate);
         let totalCost = servTip + parseFloat(servCost);
-        document.getElementById('tip').innerHTML = Math.ceil(servTip);
+        document.getElementById('tip').innerHTML = Math.ceil(servTip * 100) / 100;
         document.getElementById('total').innerHTML = Math.ceil(totalCost * 100) / 100;
         }
 }
