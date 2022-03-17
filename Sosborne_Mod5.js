@@ -21,7 +21,7 @@ function myDogConst(name, breed, show, notes, mySound) {
 //calling myDogConst
 
 myDogConst.canTalk = true;
-let scoobDisp = new myDogConst("Scooby-Doo", "Great Dane", "Scooby-Doo Where Are You", "lifelong companion of Shaggy Rogers; a big dog and several teenage humans.", "Ruh-roh, Raggy!");
+let scoob = new myDogConst("Scooby-Doo", "Great Dane", "Scooby-Doo Where Are You", "lifelong companion of Shaggy Rogers; a big dog and several teenage humans.", "Ruh-roh, Raggy!");
 if(myDogConst.canTalk == true) {
-    scoobDisp.myGreeting();
+    scoob.myGreeting();
 }
