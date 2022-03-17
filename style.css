@@ -1,0 +1,24 @@
+.container {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box {
+    cursor: pointer;
+    border: 1px solid black;
+    height: fit-content;
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+    max-width: 600px;
+}
+
+.box>img {
+    display: block;
+    margin: auto;
+    max-width: 250px;
+}
+
