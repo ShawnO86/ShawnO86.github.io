@@ -63,7 +63,7 @@ let courageDisp = new Dog(
   "https://static.wikia.nocookie.net/courage/images/4/46/New_Courage.png",
   true);
 
-const boxContainer = document.querySelector('.container');
+const boxContainer = document.querySelector('.dogCage');
 
 function createBox(object) {
   const boxItem = document.createElement("div");
